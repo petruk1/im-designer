@@ -36,6 +36,11 @@ body {
     cursor: pointer;
 }
 
+.default-link{
+    color: white;
+    text-decoration: none
+}
+
 .navigation-menu__item:hover {
     background-color: rgb(249, 90, 58);
 }
@@ -177,14 +182,12 @@ body {
 
 .about-us__short-description {
     margin-top: 0;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
+    font-size: 1.2rem;
     margin-bottom: 50px
 }
 
 .team {
     width: 50%;
-    padding: 0 60px 0 30px;
     padding-left: 30px;
 }
 
@@ -385,17 +388,13 @@ body {
         flex-direction: column;
         justify-items: center;
     }
-    .socials{
+    .socials {
         margin-top: 15px;
+        padding: 0;
     }
 }
 
-@media (min-width: 1200px) {
-   
-}
-
 @media (max-width: 960px) {
-   
     .works__type-btns-container {
         display: grid;
         width: 80%;
@@ -406,6 +405,12 @@ body {
         flex-basis: auto;
         max-width: 50%;
         height: 256px
+    }
+    .contact-us {
+        width: 80%;
+    }
+    .address {
+        text-align: center;
     }
 }
 
@@ -419,13 +424,166 @@ body {
         min-width: 98%;
     }
     .about-us-team {
-        padding: 0 0 100px 0;
+        padding: 0;
+        padding-bottom: 100px;
     }
     .team {
-        padding: 0 0 0 30px;
+        padding: 0;
+        padding-left: 30px;
     }
     .work {
         max-height: 256px
+    }
+}
+
+@media (max-width: 420px) {
+    .navigation-menu__item {
+        padding: 15px 5px;
+        font-size: .7rem;
+        text-align: center;
+    }
+    .banner__title {
+        font-size: 4rem;
+    }
+    .banner__slogan {
+        font-size: 1.4rem;
+    }
+    .banner__short-description {
+        width: 370px;
+    }
+    .content {
+        width: 98%;
+    }
+    .about-us-team {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-us {
+        width: 370px;
+        padding-right: 0;
+    }
+    .about-us__short-description {
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .team {
+        width: 370px;
+        padding-left: 0;
+    }
+    .works__container {
+        width: 370px;
+        min-width: auto;
+    }
+    .work {
+        width: 180px;
+        height: auto;
+        min-height: auto;
+    }
+    .contact-us {
+        width: 90%;
+        ;
+    }
+}
+
+@media (max-width: 380px) {
+    .banner__title {
+        font-size: 3rem;
+    }
+    .banner__slogan {
+        font-size: 1.2rem;
+    }
+    .banner__short-description {
+        width: 320px;
+    }
+    .about-us {
+        width: 320px;
+    }
+    .team {
+        width: 320px;
+    }
+    .works__container {
+        width: 320px;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .navigation-menu__item {
+        padding: 15px 5px;
+        font-size: .65rem;
+        text-align: center;
+    }
+    .banner__short-description {
+        width: 300px;
+    }
+    .about-us {
+        width: 300px;
+    }
+    .team {
+        width: 300px;
+    }
+    .works__container {
+        width: 300px;
+        min-width: auto;
+    }
+}
+@media (max-width: 960px) and (orientation: landscape) {
+    .about-us-team {
+        padding: 20px;
+    }
+    .about-us {
+        width: 420px;
+        padding-right: 15px;
+    }
+    .team {
+        width: 420px;
+        padding-left: 15px;
+    }
+    .works__container {
+        width: 90%;
+        min-width: auto;
+    }
+    .contact-us {
+        width: 85%;
+    }
+    .address {
+        text-align: center;
+    }
+}
+
+@media (max-width: 840px) and (orientation: landscape) {
+    .content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 760px) and (orientation: landscape) {
+    .about-us-team {
+        padding: 20px;
+    }
+    .about-us {
+        width: 320px;
+    }
+    .team {
+        width: 320px;
+    }
+    .works__container {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+    .about-us-team {
+        padding: 20px;
+    }
+    .about-us {
+        width: 320px;
+    }
+    .team {
+        width: 320px;
+    }
+    .works__container {
+        min-width: auto;
     }
 }
 
